@@ -13,7 +13,7 @@ const Questions = ({ title, info }) => {
       <header>
         <h4>{title}</h4>
         <button className="btn" onClick={handleClick}>
-          btn
+          {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
       {showInfo && <p>{info}</p>}
