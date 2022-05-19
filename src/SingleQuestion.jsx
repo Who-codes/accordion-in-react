@@ -1,5 +1,5 @@
-const SingleQuestion = ({ question }) => {
-  return <p>{question.title}</p>;
+const SingleQuestion = ({ title }) => {
+  return <p>{title}</p>;
 };
 
 export default SingleQuestion;
