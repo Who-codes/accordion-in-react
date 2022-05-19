@@ -1,9 +1,15 @@
-import questions from "./data";
-import SingleQuestion from "./SingleQuestion";
-const Questions = () => {
-  return questions.map((question) => (
-    <SingleQuestion question={question} key={question.id} />
-  ));
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+
+const Questions = ({ title, info }) => {
+  return (
+    <article className="question">
+      <header>
+        <h4>{title}</h4>
+        <button className="btn">btn</button>
+      </header>
+      <p>{info}</p>
+    </article>
+  );
 };
 
 export default Questions;

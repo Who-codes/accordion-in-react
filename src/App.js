@@ -1,5 +1,5 @@
 import questions from "./data";
-import SingleQuestion from "./SingleQuestion";
+import Questions from "./Questions";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <h3>questions and answers about login</h3>
         <section className="info">
           {questions.map((question) => (
-            <SingleQuestion {...question} key={question.id} />
+            <Questions {...question} key={question.id} />
           ))}
         </section>
       </div>
